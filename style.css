@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #203243;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    width: 100%;
+    max-width: 350px;
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 5px;
+}
+.card h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.card h1 i{
+    margin: 0 15px;
+    font-size: 28px;
+}
+.card button{
+    width: 100%;
+    padding: 10px 25px;
+    outline: 0;
+    border: 1px solid #203243;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.card button:hover{
+    background-color: #ffcaab;
+    color: #203243;
+    cursor: pointer;
+}
+.card .notes_container, .card .notes_container div{
+    position: relative;
+}
+.card .notes_container p{
+    padding: 25px;
+    height: 150px;
+    width: 100%;
+    max-height: 750px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 35ch; /* Ограничение до 75 символов */
+
+  overflow: hidden; /* Обрезка текста, выходящего за пределы */
+}
+.card .notes_container i {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition:all .3s ease;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.card .notes_container i:hover{
+    background-color: #ffcaab;
+    color: #203243;
+    cursor: pointer;
+}
+
+
+.header{
+    background-color: aliceblue;
+    border-radius: 90px;
+    font-size: 100px;
+}
